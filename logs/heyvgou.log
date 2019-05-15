@@ -1,3 +1,0 @@
-2019-03-08 23:22:08.651 [main] INFO  xyz.quxiao.java8forimpatient.other.NotifyTest - call notify, but not release lock, sleeping 5 secs
-2019-03-08 23:22:13.668 [main] INFO  xyz.quxiao.java8forimpatient.other.NotifyTest - about to release monitor lock
-2019-03-08 23:22:13.668 [Thread-4] INFO  xyz.quxiao.java8forimpatient.other.NotifyTest - Thread-4 wakeup, working...
