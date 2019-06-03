@@ -36,12 +36,13 @@ public class Ex2 {
         withLock(Ex2.lock, () -> {
           logger.info("-----------------");
           logger.info("Print log");
-          logger.info("Time is:{}", LocalDateTime.now().format(DateTimeFormatter.BASIC_ISO_DATE));
+          logger.info("Time is:{}", LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME));
           logger.info("+++++++++++++++++");
           latch.countDown();
         });
       });
     }
+    executorService.shutdown();
     latch.await();
     logger.info("all finish, main exit");
   }
