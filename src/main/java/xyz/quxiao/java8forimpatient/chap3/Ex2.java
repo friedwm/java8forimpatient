@@ -29,6 +29,7 @@ public class Ex2 {
 
   public static void main(String[] args) throws InterruptedException {
     int totalThreads = 10;
+    assert totalThreads == 2;
     ExecutorService executorService = Executors.newFixedThreadPool(totalThreads);
     CountDownLatch latch = new CountDownLatch(totalThreads);
     for (int i = 0; i < totalThreads; i++) {
