@@ -1,5 +1,6 @@
 package xyz.quxiao.java8forimpatient.chap6;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -16,4 +17,7 @@ public class StreamInternal {
     }).map(String::length).sorted().findFirst();
     System.out.println(first.orElse(null));
   }
+
+  StreamInternal internal = StreamInternal.this;
+
 }
